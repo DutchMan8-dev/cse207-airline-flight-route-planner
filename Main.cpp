@@ -208,7 +208,7 @@ public:
                 int v = adj[i][j].to;
                 cout << airports[v].code
                      << " [" << adj[i][j].distanceKm << " km, "
-                     << adj[i][j].durationMin << " min, €"
+                     << adj[i][j].durationMin << " min, â‚¬"
                      << adj[i][j].costEUR << "]";
                 if (j != (int)adj[i].size() - 1) cout << " | ";
             }
@@ -336,12 +336,12 @@ public:
             cout << "Best duration: " << dist[destination] << " min\n";
         } else {
             cout << "Optimized by: Cost\n";
-            cout << "Best fare: €" << dist[destination] << endl;
+            cout << "Best fare: â‚¬" << dist[destination] << endl;
         }
 
         cout << "Total distance: " << totalDistance << " km\n";
         cout << "Total duration: " << totalDuration << " min\n";
-        cout << "Total cost: €" << totalCost << endl;
+        cout << "Total cost: â‚¬" << totalCost << endl;
         cout << endl;
     }
 
